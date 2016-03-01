@@ -1,0 +1,24 @@
+{
+  "name": "portifa",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Lucas Dias Lopes <lucas_front@yahoo.com.br>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/magnorion/portifa",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/asstets/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "jquery": "^2.2.1",
+    "font-awesome": "^4.5.0"
+  }
+}

@@ -1,0 +1,58 @@
+body{
+  padding: 0px;
+  margin: 0px;
+  font-family: helvetica;
+}
+
+.holder{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.content{
+  margin: 0px auto !important;
+  height: auto;
+  position: relative;
+  width: 80%;
+  max-width: 1000px;
+  padding: 20px;
+  overflow: auto;
+}
+
+#top-menu{
+  background: #fff;
+  box-shadow: 0px 0px 3px 1px #000;
+  height: 50px;
+  position: fixed;
+  z-index: 9;
+  ul{
+    padding:20px;
+    margin: 0px;
+    position: absolute;
+    &#opt-left{
+      left: 0%;
+    }
+    &#opt-right{
+      right: 0%;
+    }
+    li{
+      display: inline;
+    }
+  }
+}
+
+.dest-container{
+  .content-box{
+    margin-top: 20px;
+    position: relative;
+    float:left;
+    min-width: 300px;
+  }
+  #content-left{
+    width: 60%;
+  }
+  #content-right{
+    width: 30%;
+  }
+}
