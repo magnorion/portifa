@@ -15,9 +15,7 @@
         <li>opt 3</li>
       </ul>
       <ul id="opt-right">
-        <li>opt 1</li>
-        <li>opt 2</li>
-        <li>opt 3</li>
+        <li> <button id="search-site"><i class="fa fa-search"></i></button></li>
       </ul>
     </div>
     <!-- endTop menu -->
@@ -26,6 +24,9 @@
       <div class="show-title content">
         <h1> Lorem ipsum </h1>
         <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla semper iaculis nibh in placerat. Integer rutrum, turpis ut rutrum rutrum, lorem ipsum sagittis mi, et condimentum tortor mi sed mi. Sed quis auctor nibh. Curabitur aliquet porttitor arcu vel rutrum. Nulla facilisi. Phasellus a massa ut diam interdum varius sed non augue. Nullam vel enim sed mauris tempor elementum et sed diam.  </p>
+      </div>
+      <div class="arrow-to-down">
+        <i class="fa fa-arrow-down"></i>
       </div>
     </div>
     <!-- endShowTime -->
@@ -43,6 +44,9 @@
             <!-- Boxs -->
             <div class="box" ng-repeat="box in boxes">
               <img src="{{box.img}}" />
+              <div class="box-content">
+                <p> {{box.comment}} </p>
+              </div>
             </div>
             <!-- endBoxs -->
           </div>
@@ -58,10 +62,20 @@
       <div id="form-box" class="holder dest-container section">
         <div class="content">
           <form action="#" method="post">
-            <input type="text" placeholder="Nome" name="nome" />
-            <input type="text" placeholder="Email" name="nome" />
-            <textarea placeholder="Msg" name="msg"></textarea>
-            <button id="sendInfo"> Enviar Dados </button>
+            <h2> Contact </h2>
+            <div>
+              <label> <i class="fa fa-user"></i> </label>
+              <input type="text" placeholder="Nome" name="nome" />
+            </div>
+            <div>
+              <label> <i class="fa fa-at"></i> </label>
+              <input type="text" placeholder="Email" name="nome" />
+            </div>
+            <div id="msg-position">
+              <p> <i class="fa fa-envelope"></i> </p>
+              <textarea placeholder="Msg" name="msg"></textarea>
+            </div>
+            <button id="sendInfo"> <i class="fa fa-arrow-right"></i> Enviar Mensagem </button>
           </form>
         </div>
       </div>
@@ -75,6 +89,7 @@
             <li>opt 3</li>
             <li>opt 4</li>
           </ul>
+          <p id="footer-msg"> <a href="http://github.com/magnorion/portifa" target="_BLANK">Template Portifa</a> <a href="http://github.com/magnorion/" target="_BLANK">@magnorion</a> </div>
         </div>
       </div>
       <!-- footer -->

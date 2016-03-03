@@ -8,6 +8,23 @@ body{
   width: 100%;
   height: auto;
   position: relative;
+  .arrow-to-down{
+    margin-top: 40vh;
+    font-size: 30px;
+    transition: all ease 1s;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    text-align: center;
+    i{
+      cursor: pointer;
+      text-align: center;
+      margin: 0px auto;
+    }
+    &:hover{
+      bottom: 8%;
+    }
+  }
 }
 
 .content{
@@ -61,7 +78,7 @@ $menuColor: #fff;
   top: 0%;
   z-index: 9;
   ul{
-    padding:20px;
+    padding:15px;
     margin: 0px;
     position: absolute;
     &#opt-left{
@@ -74,6 +91,12 @@ $menuColor: #fff;
       display: inline;
       color: #878ea7;
       font-weight: bold;
+    }
+    #search-site{
+      border: none;
+      background: transparent;
+      cursor: pointer;
+      font-size: 18px;
     }
   }
 }
@@ -115,54 +138,97 @@ $menuColor: #fff;
     min-width: 280px;
     margin-right: 3.3%;
     margin-bottom: 2%;
-    height: auto;
+    height: 260px;
     overflow: auto;
     position: relative;
-    box-shadow: 0px 0px 2px 0px #000;
     float: left;
-    border-radius: 5px;
-    transition: all 1s ease;
-    cursor: pointer;
+    perspective: 1000;
+    perspective: 1000;
     img{
       width: 100%;
-      height: 100%;
+      height: 260px;
+      border-radius: 5px;
+      cursor: pointer;
+      position: absolute;
+      top:0%;
+      left: 0%;
+      z-index:2;
+      transition: all 0.5s ease;
     }
-    &:hover{
-      transform: rotateY(180deg);
+    .box-content{
+      position: absolute !important;
+      top: 0%;
+      left: 0%;
+      background: #fff;
+      color: #000;
+      height: 260px;
+      width: 100%;
+      backface-visibility: hidden;
+      z-index:1;
+      p{
+        padding: 20px;
+      }
+    }
+    &:hover > img{
+      opacity:0
     }
   }
 }
 
 #form-box{
   background: url("../img/bg1.jpg") fixed center no-repeat;
+  h2{
+    color: #fff;
+    text-shadow: 0px 2px 9px;
+    font-size: 30px;
+    text-align: center;
+  }
   form{
     width: 70%;
     max-width: 400px;
     min-width: 280px;
-    margin-left: 30%;
-    margin-top: 10%;
+    position: relative;
+    margin: 10% auto;
+    label{
+      color: #fff;
+    }
     textarea{
       resize: none;
       height: 100px;
+      width: 100% !important;
+      padding: 0% !important;
+      margin-top: 10px;
+      overflow: hidden;
     }
     input,textarea{
-      width: 95%;
+      width: 87%;
       font-family: helvetica;
       margin-bottom: 10px;
       padding: 3%;
-      opacity: 0.5;
-      &:focus{
-        opacity: 1;
-      }
+      opacity: 1;
+      border: none;
+      border-bottom: solid 3px #ffa500;
+      background: transparent;
+      color: #fff;
+    }
+    #msg-position p{
+      text-align: center;
+      margin: 0px auto;
+      color: #fff;
     }
     button{
       width: 102%;
       padding: 3%;
       font-family: helvetica;
       cursor: pointer;
-      background: #fff;
+      background: #ffa500;
+      color: #fff;
       border: none;
       border-radius: 5px;
+      font-weight: bold;
+      &:hover{
+        background: #ffb732;
+      }
     }
   }
 }
@@ -170,11 +236,24 @@ $menuColor: #fff;
 #footer-site{
   background: #000;
   height: auto !important;
+  color: #fff;
+  position: relative;
   ul{
+    width: 20%;
+    min-width: 300px;
     li{
-      color: #fff;
       list-style: none;
       line-height: 30px;
+      border-bottom: dashed 1px #fff;
+    }
+  }
+  #footer-msg{
+    position: absolute;
+    right: 1%;
+    bottom: 1%;
+    font-size: 12px;
+    a{
+      color: #fff;
     }
   }
 }
