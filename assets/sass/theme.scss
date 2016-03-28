@@ -40,13 +40,14 @@ body{
 .section-title{
   text-shadow: #1F3342 1px 0px 1px;
   font-size: 25px;
-  border-bottom: 3px dashed #000;
+  border-bottom: 3px dashed #fff;
 }
 
 .sign-icon-position{
   @extend .section-title;
   position: absolute;
-  bottom: -7%;
+  bottom: 0%;
+  margin-bottom: -50px;
   border: none !important;
   width: 90%;
   margin-left: 5%;
@@ -65,7 +66,7 @@ body{
 }
 
 .show-title{
-  top: 15%;
+  top: 27%;
   text-align: center;
 }
 
@@ -92,6 +93,11 @@ $menuColor: #fff;
       color: #878ea7;
       font-weight: bold;
     }
+    .logo{
+      background: #878ea7;
+      color: #fff;
+
+    }
     #search-site{
       border: none;
       background: transparent;
@@ -107,7 +113,9 @@ $menuColor: #fff;
 
 #first-box{
   color: #fff;
-  background: url("../img/bg2.jpg") fixed center no-repeat;
+  line-height: 20px;
+  background: url("../img/bg2.jpg") fixed no-repeat;
+  background-size: cover;
   text-shadow: #1F3342 1px 0px 1px;
 }
 
@@ -159,7 +167,7 @@ $menuColor: #fff;
       position: absolute !important;
       top: 0%;
       left: 0%;
-      background: #fff;
+      background: #d9d9d9;
       color: #000;
       height: 260px;
       width: 100%;
@@ -170,13 +178,33 @@ $menuColor: #fff;
       }
     }
     &:hover > img{
-      opacity:0
+      opacity:0.3
     }
   }
 }
 
+$project_color: #7fbf7f;
+#projects-box{
+  background: $project_color;
+  color: #fff;
+}
+.projects-sign{
+  background: $project_color !important;
+}
+
+#about-box{
+  background: url("../img/bg1.jpg") fixed no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+$form_color: #4c759a;
+.form-sign{
+  background: $form_color !important;
+  color: #fff;
+}
 #form-box{
-  background: url("../img/bg1.jpg") fixed center no-repeat;
+  background: $form_color;
   h2{
     color: #fff;
     text-shadow: 0px 2px 9px;
@@ -188,7 +216,10 @@ $menuColor: #fff;
     max-width: 400px;
     min-width: 280px;
     position: relative;
-    margin: 10% auto;
+    margin: 15% auto;
+    background: #44698a;
+    padding: 15px;
+    border-radius: 10px;
     label{
       color: #fff;
     }
@@ -210,6 +241,7 @@ $menuColor: #fff;
       border-bottom: solid 3px #ffa500;
       background: transparent;
       color: #fff;
+      font-size: 15px;
     }
     #msg-position p{
       text-align: center;
@@ -217,17 +249,21 @@ $menuColor: #fff;
       color: #fff;
     }
     button{
-      width: 102%;
+      width: 100%;
       padding: 3%;
+      height: 50px;
       font-family: helvetica;
+      font-size: 17px;
       cursor: pointer;
-      background: #ffa500;
+      background: transparent;
       color: #fff;
-      border: none;
+      border: solid #ffa500 2px;
       border-radius: 5px;
       font-weight: bold;
+      transition: 1s ease all;
+      margin-top: 15px;
       &:hover{
-        background: #ffb732;
+        background: #ffa500;
       }
     }
   }
@@ -241,6 +277,8 @@ $menuColor: #fff;
   ul{
     width: 20%;
     min-width: 300px;
+    padding: 0px;
+    margin-top: 40px;
     li{
       list-style: none;
       line-height: 30px;

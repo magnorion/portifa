@@ -2,7 +2,7 @@
 <html ng-app="app">
   <head>
     <meta charset="utf-8">
-    <title>Magnorion</title>
+    <title>Portifa - Template para portfólio</title>
     <link rel="stylesheet" href="assets/vendor/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" href="assets/css/theme.css" />
   </head>
@@ -10,9 +10,9 @@
     <!-- top menu -->
     <div class="holder" id="top-menu">
       <ul id="opt-left">
-        <li>opt 1</li>
-        <li>opt 2</li>
-        <li>opt 3</li>
+        <li class="logo">Portifa</li>
+        <li>Projetos</li>
+        <li>Contato</li>
       </ul>
       <ul id="opt-right">
         <li> <button id="search-site"><i class="fa fa-search"></i></button></li>
@@ -32,7 +32,7 @@
     <!-- endShowTime -->
     <div id="body-site">
       <!-- Projects -->
-      <div class="holder">
+      <div id="projects-box" class="holder">
         <div class="content">
           <div class="content-box">
             <div class="section-title">
@@ -52,14 +52,21 @@
           </div>
         </div>
         <div class="sign-icon-position">
-          <div class="sign-icon">
+          <div class="sign-icon projects-sign">
             <i class="fa fa-pencil"></i>
           </div>
         </div>
       </div>
       <!-- end -->
+      <!-- sobre -->
+      <div id="about-box" class="holder">
+        <div class="content">
+
+        </div>
+      </div>
+      <!-- endSobre -->
       <!-- form -->
-      <div id="form-box" class="holder dest-container section">
+      <div id="form-box" class="holder dest-container">
         <div class="content">
           <form action="#" method="post">
             <h2> Contact </h2>
@@ -77,6 +84,11 @@
             </div>
             <button id="sendInfo"> <i class="fa fa-arrow-right"></i> Enviar Mensagem </button>
           </form>
+        </div>
+        <div class="sign-icon-position">
+          <div class="sign-icon form-sign">
+            <i class="fa fa-envelope"></i>
+          </div>
         </div>
       </div>
       <!-- endForm -->
